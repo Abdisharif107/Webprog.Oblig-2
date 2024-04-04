@@ -39,7 +39,7 @@ Kodestruktur;
 
 'index.js': JavaScript-fil som inneholder funskjonene for håndtering av brukerinteraksjoner og gjøre AJAX-forespørsler.
 
-'Billett.java': Billett-filen inneholder alle objektene som trengs for hele prosjektet.
+'Billett.java': Billett-filen inneholder alle objektene som trengs for hele prosjektet og er egendefinert klasse.
 
 'BillettController.java': BillettController-filen er server delen av prosjektet. Filen innholer funskjoner som RestController,
 GetMapping, PostMapping.
