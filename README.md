@@ -2,7 +2,7 @@ README.md
 
 
 Dette prosjektet er en enkel webaplikasjon for kjøp av kinobillett.
-Den lar brukere velge en film, angi billetter og oppgi personlig informasjon som navn,adresse,mobilnummer og e-psot.
+Den lar brukere velge en film, angi billetter og oppgi personlig informasjon som navn, adresse, mobilnummer og e-psot.
 Brukere kan deretter registere kjøpet av billett, se alle kjøpte billetter og slette all billettregistreringer.
 
 Funksjoner:
