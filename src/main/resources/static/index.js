@@ -10,9 +10,6 @@ function feilMelding(){
 
 function kjopBillett(){
     feilMelding();
-    if (!validInput()){
-        return;
-    }
     const billett={
         film : $("#film").val(),
         antall : $("#antall").val(),
@@ -82,58 +79,6 @@ function kjopBillett(){
     }
 
 }
-
-
-function validInput(){
-    let  valid = true;
-    if (document.getElementById("mobilnummer").value === "") {
-        document.getElementById("feil6").innerText = "Må skrive noe inn i telefonnr."
-    }
-    else if (valMobilnummer(document.getElementById("mobilnummer").value)) {
-        settFeil("feil6", "Ugyldig telefonnummer.")
-        valid = false;
-    }
-
-    if (document.getElementById("epost").value === "") {
-        document.getElementById("feil7").innerText = "Må skrive noe inn i epost."
-    } else if (valEpost(document.getElementById("epost").value)) {
-        settFeil("feil7", "Ugyldig epost.")
-        console.log("1");
-        valid = false;
-    }
-    return valid;
-}
-
-
-/*
-function validInput() {
-    let valid = true;
-
-    // Mobilnummer validation
-    const mobilnummer = $("#mobilnummer").val();
-    if (mobilnummer === "") {
-        $("#feil6").text("Må skrive noe inn i telefonnr.");
-        valid = false;
-    } else if (valMobilnummer(mobilnummer)) {
-        settFeil("feil6", "Ugyldig telefonnummer.");
-        valid = false;
-    }
-
-    // Epost validation
-    const epost = $("#epost").val();
-    if (epost === "") {
-        $("#feil7").text("Må skrive noe inn i epost.");
-        valid = false;
-    } else if (valEpost(epost)) {
-        settFeil("feil7", "Ugyldig epost.");
-        console.log("1");
-        valid = false;
-    }
-
-    return valid;
-}
-
- */
 
 function hentAlt(){
     $.get("/hentAlt", function (data){
