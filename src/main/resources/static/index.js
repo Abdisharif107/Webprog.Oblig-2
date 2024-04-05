@@ -64,21 +64,6 @@ function kjopBillett(){
     }
 
     return valid;
-
-
-    if (billett.film !== "" && billett.antall !== "" && billett.fornavn !== ""
-        && billett.etternavn !== "" && billett.adresse !== "" && billett.mobilnummer !== ""
-        && billett.epost !== "") {
-
-        $("#film").val("");
-        $("#antall").val("");
-        $("#fornavn").val("");
-        $("#etternavn").val("");
-        $("#adresse").val("");
-        $("#mobilnummer").val("");
-        $("#epost").val("");
-    }
-
 }
 
 function hentAlt(){
